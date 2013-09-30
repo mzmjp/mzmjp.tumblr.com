@@ -53,14 +53,14 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	border-top: 2px solid #39a1c5;
-	color: #222222;
+	border-top: 2px solid #222;
+	color: #222;
 	background: #efefef url("http://assets.tumblr.com/images/x.gif"); 
 }
 
 a:link,
 a:visited {
-	color: #222222;
+	color: #222;
 	text-decoration: underline;
 	-webkit-transition: all .14s ease-in-out;
 	-moz-transition: all .14s ease-in-out;
@@ -75,7 +75,7 @@ a:active {
 
 .header a:link,
 .header a:visited {
-	color: #222222;
+	color: #222;
 	text-decoration: none;
 }
 
@@ -469,7 +469,7 @@ div[id^="photoset"] {
 
 .link h1 a:link,
 .link h1 a:visited {
-	color: #222222;
+	color: #222;
 }
 
 .link h1 a:hover,
