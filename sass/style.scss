@@ -85,7 +85,7 @@ a:active {
 }
 
 p {
-	margin: 0 0 1.5em 0;
+	margin: 0;
 }
 
 h1 {
@@ -307,6 +307,10 @@ blockquote {
 
 .text .tags {
 	padding-top: .125em;
+}
+
+.text p {
+	margin: 0 0 1em 0;
 }
 
 /* photo post */
