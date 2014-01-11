@@ -89,9 +89,28 @@ p {
 }
 
 h1 {
-	font-size: 2.375em;
+	font-size: 230%;
 	line-height: 1em;
 	font-weight: bold;
+}
+
+h2 {
+	margin: 1.2em 0 .2em 0;
+	font-size: 180%;
+	line-height: 1em;
+}
+
+
+h3 {
+	margin: 1.2em 0 .2em 0;
+	font-size: 150%;
+	line-height: 1em;
+}
+
+h4 {
+	margin: 1.2em 0 .2em 0;
+	font-size: 120%;
+	line-height: 1em;
 }
 
 blockquote {
@@ -111,7 +130,7 @@ blockquote {
 
 .header div {
 	float: left;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
 .header p {
@@ -267,8 +286,6 @@ blockquote {
 }
 
 .notes {
-	position: relative;
-	top: -64px;
 	font-size: .875em;
 }
 
@@ -310,7 +327,8 @@ blockquote {
 }
 
 .text p {
-	margin: 0 0 1em 0;
+	margin: 0 0 1.2em 0;
+	font-size: 110%;
 }
 
 /* photo post */
@@ -448,6 +466,10 @@ div[id^="photoset"] {
 
 /* quote post */
 
+.quote h1 {
+	line-height: 1.1;
+}
+
 .quote .icon {
 	background-image: url("http://assets.tumblr.com/images/x.gif"); 
 }
@@ -481,6 +503,25 @@ div[id^="photoset"] {
 	color: #39a1c5;
 }
 
+/* Like and Reblog buttons */
+
+.like_and_reblog_buttons {
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	list-style: none;
+}
+
+.like_and_reblog_buttons li {
+	float: left;
+	margin: 0;
+	padding: 7px 15px;
+	height: 20px;
+}
+
+.like_and_reblog_buttons li:first-child {
+	border-right: 1px solid #e8e8e8;
+}
+
 /*/////////////////////////////////////////  widescreen  /////////////////////////////////////////*/
 
 @media (min-width:641px) {
@@ -491,13 +532,6 @@ div[id^="photoset"] {
 
 .container {
 	padding: 48px 80px;
-}
-
-.post-data,
-.post-content,
-.tags,
-.notes {
-	margin: 0 0 1%;
 }
 
 .album {
