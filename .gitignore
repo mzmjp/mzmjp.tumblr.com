@@ -1,4 +1,7 @@
-*.html
+new.html
+origin.html
+origin_p.html
+temp.html
 
 #Mac
 .DS_Store
