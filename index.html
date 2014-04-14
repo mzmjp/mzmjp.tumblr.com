@@ -1,755 +1,123 @@
-
-<!DOCTYPE html>
-<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=475de8c4282373e0381f1617bed89211"></script>
-<!doctype html>
 <html>
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">  
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_db242feea1c5_128.png"/>
-		<link rel="alternate" type="application/rss+xml" href="http://mzmjp.tumblr.com/rss"/>
-		<meta name="description" content="You&#039;re RIGHT, I&#039;m RIGHT too. There&#039;s no one LEFT here. [ Twitter | last.fm | Instagram | Flickr | flavors.me ] http://mzmjp.net"/>
-		<title>mzmjp.tumblr.com</title>
-	
-<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
-<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
-<!-- Read more: http://ogp.me/ -->
-<meta property="fb:app_id" content="48119224995" />
-<meta property="og:title" content="mzmjp.tumblr.com" />
-<meta property="og:url" content="http://mzmjp.tumblr.com/?og=1" />
-<meta property="og:description" content="You&#039;re RIGHT, I&#039;m RIGHT too. There&#039;s no one LEFT here. [ Twitter | last.fm | Instagram | Flickr |..." />
-<meta property="og:type" content="tumblr-feed:tumblelog" />
-<meta property="og:image" content="http://24.media.tumblr.com/avatar_db242feea1c5_128.png" />
-<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/150767/lib/mzmjp/new.css">
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	<title>{Title}</title>
+</head>
+<body>
+	<div class="mod_container">
 
+		<header class="mod_header">
+			<h1 class="mod_title"><a href="/">{Title}</a></h1>
+			{block:Description}<p class="mod_description">{Description}</p>{/block:Description}
+		<!-- /.mod_header --></header>
 
-<!-- TWITTER TAGS -->
-<meta charset="utf-8">
-            <meta name="twitter:site" content="tumblr" />
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="mzmjp" />
-            <meta name="twitter:description" content="&lt;p&gt;You&#039;re RIGHT, I&#039;m RIGHT too. There&#039;s no one LEFT here.&lt;br /&gt;
-[ &lt;a href=&quot;https://twitter.com/mzmjp&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt; | &lt;a href=&quot;http://www.lastfm.jp/user/mzmjp/&quot; target=&quot;_blank&quot;&gt;last.fm&lt;/a&gt; | &lt;a href=&quot;http://instagram.com/mzmjp&quot; target=&quot;_blank&quot;&gt;Instagram&lt;/a&gt; | &lt;a href=&quot;http://www.flickr.com/photos/mzmjp/&quot; target=&quot;_blank&quot;&gt;Flickr&lt;/a&gt; | &lt;a href=&quot;http://flavors.me/mzmjp&quot; target=&quot;_blank&quot;&gt;flavors.me&lt;/a&gt; ]&lt;br /&gt;
-&lt;i&gt;&lt;a href=&quot;http://mzmjp.net/&quot; target=&quot;_blank&quot;&gt;http://mzmjp.net&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;" />
-            <meta name="twitter:app:name:iphone" content="Tumblr" />
-            <meta name="twitter:app:name:ipad" content="Tumblr" />
-            <meta name="twitter:app:name:googleplay" content="Tumblr" />
-            <meta name="twitter:app:id:iphone" content="305343404" />
-            <meta name="twitter:app:id:ipad" content="305343404" />
-            <meta name="twitter:app:id:googleplay" content="com.tumblr" />
-            <meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=mzmjp&amp;referrer=twitter-cards" />
-            <meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=mzmjp&amp;referrer=twitter-cards" />
-            <meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=mzmjp&amp;referrer=twitter-cards" />
-    
+		<div class="mod_main" role="main">
+			{block:Posts}
 
-<script type="text/javascript" src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=83c002e9bd947a7c3a044efdde3ef9c0"></script><meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+			<article class="mod_post {PostType}">
 
-	<body>
-	<div id="tmblr" class="container">
+				<div class="mod_post_info">
+					<p class="mod_post_date">{block:Date}<a href="{Permalink}">{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}{/block:Date}</a></p>
+					<h1 class="mod_post_title"><a href="{Permalink}">{block:Title}{Title}{/block:Title}</a></h1>
+				<!-- /.mod_post_info --></div>
 
-	<div class="header">	
-		
-		<div>
-		<h1><a class="title" href="/">mzmjp.tumblr.com</a></h1>
-		<p><p>You're RIGHT, I'm RIGHT too. There's no one LEFT here.<br />
-[ <a href="https://twitter.com/mzmjp" target="_blank">Twitter</a> | <a href="http://www.lastfm.jp/user/mzmjp/" target="_blank">last.fm</a> | <a href="http://instagram.com/mzmjp" target="_blank">Instagram</a> | <a href="http://www.flickr.com/photos/mzmjp/" target="_blank">Flickr</a> | <a href="http://flavors.me/mzmjp" target="_blank">flavors.me</a> ]<br />
-<i><a href="http://mzmjp.net/" target="_blank">http://mzmjp.net</a></i></p></p>
-		</div>
-	</div>
+				<div class="mod_post_content">
 
-		
+					<div class="mod_post_content_wrapper">
 
-		<ol id="posts">
-		
-			
-			<li class="post text">
+				{block:Text}
+						{Body}
+				{/block:Text}
 
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/59776990824">2013-08-31</a></li>
+				{block:Photo}
+					{LinkOpenTag}<img src="{PhotoURL-1280}" alt="{PhotoAlt}">{LinkCloseTag}
+					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+				{/block:Photo}
+
+				{block:Photoset}
+						{Photoset-500}
+					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+				{/block:Photoset}
+
+				{block:Quote}
+					<h1>{Quote}</h1>
+					{block:Source}<div class="mod_source">{Source}</div>{/block:Source}
+				{/block:Quote}
+
+				{block:Link}
+					<a href="{URL}" class="mod_link" target="{Target}"><h1>{Name}</h1></a>
+					{block:Description}<div class="mod_description">{Description}</div>{/block:Description}
+				{/block:Link}
+
+				{block:Video}
+					<div class="mod_video_wrapper">
+						{Video-500}
+					</div>
+					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+				{/block:Video}
+
+					<!-- ./mod_post_content_wrapper --></div>
+
+				<!-- /.mod_post_content --></div>
+
+				{block:PermalinkPage}
+
+				<div class="mod_post_footer">
+
+					<ul class="mod_reblog_and_like_buttons">
+						<li>{ReblogButton}</li>
+						<li>{LikeButton}</li>
 					</ul>
-					
-					<div class="post-content">
 
-						<h1>ペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピス</h1>
-						<h2>ペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピス</h2>
-						<h3>ペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピス</h3>
-						<h4>ペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピス</h4>
-						<h5>ペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピスペリエカルピス</h5>
-
-					<p><p>友人と行った某隠れ家的（？）カフェで飲んだペリエカルピスがとても美味しかった。ペリエとカルピスを混ぜるだけであんなにいい感じになるとは。家でもできるので、今度やってみようかな。</p></p>
-
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-			<li class="post photo">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/59764895952">2013-08-30</a></li>
-					</ul>
-					
-				<div class="post-content">
-					<div class="content-img-wrapper"><a href="http://www.musicman-net.com/artist/28553.html"><img src="http://31.media.tumblr.com/d858d29666ea7c3173627bfd86c8a4d8/tumblr_mscct5RMKb1qzsbopo1_1280.jpg" alt="センスある。
- (上坂すみれ初の映像作品「革ブロ潜入ルポルタージュ～趣味者集団を追え～」ジャケ写解禁 | Musicman-NETから)"/></a></div>
-					<div class="caption"><p>センスある。<br/>
- (<a href="http://www.musicman-net.com/artist/28553.html">上坂すみれ初の映像作品「革ブロ潜入ルポルタージュ～趣味者集団を追え～」ジャケ写解禁 | Musicman-NET</a>から)</p></div>
-					</div>
-
-					                        
-                        
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/59489941286">2013-08-27</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>ユニフォーム好き</h1>
-					
-					<p><p>みんなお揃いで着る仕事用のユニフォームに割と憧れています。工場関係で働いている人が着ているようなツナギなんかはかなり好み。医療関係者の白衣なんかもいいです。最近のお気に入りは HMV の制服。もともと色合いが好きな上に、近頃のマイブームであるポロシャツなところも良さがある。</p>
-
-<p>みんなお揃いなんだけど調和を崩さない程度にアレンジしている人を見ると、萌え死にそうになる。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<li class="post video">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/59355812028/gotcha-by-ignoramusky">2013-08-26</a></li>
-					</ul>
-										
-					<div class="post-content">
-					<div class="video-wrapper">
-						<iframe width="500" height="374" src="http://www.youtube.com/embed/gVsI3Jz4d8c?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="caption"><p>泥棒猫。<br/>
-Gotcha! (Попался!) (by <a href="http://www.youtube.com/watch?v=gVsI3Jz4d8c&amp;feature=share">ignoramusky</a>)</p></div>
-					</div>
-
-					
-			</li>
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<li class="post video">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58924522952/goat-std-by-ypy">2013-08-22</a></li>
-					</ul>
-										
-					<div class="post-content">
-					<div class="video-wrapper">
-						<iframe width="500" height="281" src="http://www.youtube.com/embed/VesLtZgqtho?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="caption"><p>goat - std (by <a href="http://www.youtube.com/watch?v=VesLtZgqtho">YPY</a>)</p></div>
-					</div>
-
-					
-			</li>
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58912882031">2013-08-21</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>食器を使う</h1>
-					
-					<p><p><a href="http://mzmjp.tumblr.com/post/58617697738">前に書いた</a>ように、セブン・イレブンの炭酸水をちょくちょく飲んでいるのですが、最近はペットボトル直飲みではなく、一旦グラスに注いでから飲むようにしています。グラス出すのも面倒だし後で洗うのも面倒なのですが、意外とこうするだけで炭酸水がいつもより更に美味しく感じられます。不思議。</p>
-
-<p>ちなみに、炭酸水じゃなくても有効。あと、飲み物じゃなくて食べ物でも有効。スナック菓子とかナッツとかも袋で食べるより、お皿に出して食べた方が美味しく感じる。不思議。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58693610942">2013-08-19</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>生放送力</h1>
-					
-					<p><p>これからの時代、ネットでの生放送の技術力が求められることが増えていく気がしています。</p>
-
-<p>最近、ネット上で色んな生放送を見る機会があるのですが、番組によって生放送に関する力量が全然違うなあと感じています。特に音声のトラブルが目立ちがちで、公式の生放送にもかかわらず音量がとても小さくて、こちらの音量を最大にしてもほぼ聞こえないようなことが多々あります。このような音声や映像において視聴がキツい状態を、勝手に「生放送力が低い」と呼んでいます。もちろん放送しているコンテンツが一番重要なのですが。生放送力が低いとコンテンツ自体が残念に感じられてしまいます。</p>
-
-<p>生放送力が高い番組もいくつか見てきました。安定して素晴らしいのは DOMMUNE。あとニコニコ生放送のクラムボンの番組は素晴らしかったです。生放送力が高い番組はまず音質がとても良い。DOMMUNE の DJ パートは「本当にネットなの？」と思わせるほどレベルが高い。クラムボンのニコニコ生放送もそうでした。ニコニコ生放送って公式の番組でも残念な生放送力の番組が結構多くて「ニコニコ生放送ではこれが限界なのかな」と思っていたのですが、クラムボンの生放送の音質は凄かった。あと、どちらの番組も映像も凄い。画質もそうだし構図もプロの仕事を感じさせるものだった。生放送力が高いとコンテンツに集中でき、コンテンツ自体の魅力をより感じられます。</p>
-
-<p>こうなってくると、コンテンツの魅力を如何に伝えるかには、生放送力がどれだけあるかが重要になってくると思います。動画編集に関する技術は、ここ数年で全体的にすごい勢いで底上げされているので、これからは生放送に関する技術力も上がっていくのかもしれません。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58617697738">2013-08-19</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>炭酸水おいしい</h1>
-					
-					<p><p>結構昔から炭酸水が好きです。元々コーラとかの炭酸飲料は好きでよく飲んでいたのですが、たまたまスーパーで見たペリエのボトルデザインに一目惚れしてから、炭酸水をちょくちょく飲むようになってきました。最近は入手しやすさと価格の面から、セブン・イレブンの炭酸水をよく飲んでいます。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<li class="post video">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58287968883/careful-kitty-by">2013-08-15</a></li>
-					</ul>
-										
-					<div class="post-content">
-					<div class="video-wrapper">
-						<iframe width="500" height="374" src="http://www.youtube.com/embed/AgkH1T7o_VM?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="caption"><p>優しいねこ。<br/>
-Заботливая кошечка \ Careful Kitty (by <a href="http://www.youtube.com/watch?v=AgkH1T7o_VM&amp;feature=share">PrimVids</a>)</p></div>
-					</div>
-
-					
-			</li>
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/58243242626">2013-08-14</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>ポロシャツ好き</h1>
-					
-					<p><p>2012年ぐらいからポロシャツにハマっています。夏場外出する時は、たまにTシャツの時もあるけど基本的にポロシャツ。襟が付いているので、半袖だけどあまり無礼な感じにならないのがいい感じ。襟は鋭角なものが好き。ボタンダウンだとなお良し。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-			<li class="post text">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/57937928470">2013-08-11</a></li>
-					</ul>
-					
-					<div class="post-content">
-					
-						<h1>路線変更？</h1>
-					
-					<p><p>この Tumblr の使い方を少し変えてみようかなあと思っています。今までは、ネットにある気に入った画像や動画をポストしていましたが、今度からは自分の <a href="http://mzmjp.net/blog/" target="_blank">blog</a> には書くほどでも無い感じの短文を書いてみようかなと。</p></p>
-					</div>
-
-					
-
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-			<li class="post photo">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/57150699341/suica-via">2013-08-02</a></li>
-					</ul>
-					
-				<div class="post-content">
-					<div class="content-img-wrapper"><a href="http://www.roomie.jp/2013/08/91536/"><img src="http://31.media.tumblr.com/760d4641c34b0098da59a9a8015b9be2/tumblr_mqwjs63NkD1qzsbopo1_1280.jpg" alt="Suica にシール貼っていいかどうか気になるけど、こういうアイディア大好き。
-(via suicaのペンギンを着せかえるステッカー | roomie（ルーミー）)"/></a></div>
-					<div class="caption"><p>Suica にシール貼っていいかどうか気になるけど、こういうアイディア大好き。<br/>
-(via <a href="http://www.roomie.jp/2013/08/91536/">suicaのペンギンを着せかえるステッカー | roomie（ルーミー）</a>)</p></div>
-					</div>
-
-					                        
-                        
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-			<li class="post photo">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/56064235723/via-queen-ants-cat-imgur">2013-07-22</a></li>
-					</ul>
-					
-				<div class="post-content">
-					<div class="content-img-wrapper"><a href="http://imgur.com/a/bLSBD"><img src="http://31.media.tumblr.com/702b937e2e3a1aa0970f9c9f9b106e0b/tumblr_mqaq5bKZqa1qzsbopo1_1280.jpg" alt="いい顔してる。
-(via Queen Ant&amp;#8217;s Cat - Imgur)"/></a></div>
-					<div class="caption"><p>いい顔してる。<br/>
-(via <a href="http://imgur.com/a/bLSBD">Queen Ant&#8217;s Cat - Imgur</a>)</p></div>
-					</div>
-
-					                        
-                        
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-			<li class="post photo">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/55209347317/via">2013-07-12</a></li>
-					</ul>
-					
-				<div class="post-content">
-					<div class="content-img-wrapper"><a href="http://colocal.jp/news/21679.html"><img src="http://31.media.tumblr.com/3ff120e86c8c910f207b8c64cf04ad6d/tumblr_mpso8bOqZS1qzsbopo1_r1_1280.jpg" alt="(via カワウソのふにゃっとした手と握手！神奈川県三浦市の「京急油壺マリンパーク」｜コロカルニュース 最新コネタ新聞 神奈川県 三浦市｜「colocal コロカル」ローカルを学ぶ・暮らす・旅する)"/></a></div>
-					<div class="caption"><p>(via <a href="http://colocal.jp/news/21679.html">カワウソのふにゃっとした手と握手！神奈川県三浦市の「京急油壺マリンパーク」｜コロカルニュース 最新コネタ新聞 神奈川県 三浦市｜「colocal コロカル」ローカルを学ぶ・暮らす・旅する</a>)</p></div>
-					</div>
-
-					                        
-                        
-			</li>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-		
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<li class="post video">
-
-					<ul class="post-data">
-						
-						<li class="info"><a href="http://mzmjp.tumblr.com/post/54920498652/tofubeats-no-1-feat-g-rina-official-mv-by">2013-07-09</a></li>
-					</ul>
-										
-					<div class="post-content">
-					<div class="video-wrapper">
-						<iframe src="http://player.vimeo.com/video/69890244" width="500" height="281" frameborder="0"></iframe>
-					</div>
-					<div class="caption"><p><a href="https://vimeo.com/69890244">tofubeats - No.1 feat.G.RINA(official MV) (by Takuya Hosogane)</a></p></div>
-					</div>
-
-					
-			</li>
-			
-
-			
-
-			
-
-			
-
-		
-		</ol><!--posts close-->
-
-	<div id="nav">
-		
-			<a class="older" href="/page/2">Older</a>
-		
-
-		<div class="counter"><p>1&#160;/&#160;9</p></div>
-
-				
-	</div><!--nav close-->
-
-	<div id="footer">
-		<p>&#169; 2008–2013 mzmjp.tumblr.com. This site is using the <a href="#">Archtetype Theme</a> for <a href="http://www.tumblr.com/">tumblr</a>, by <a href="http://www.pgrady.com/">Patrick Grady</a>.</p>
-	</div><!-- footer close -->
-
-	</div><!--container and tumlbr close-->
-
-	<!-- Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-43242915-1', 'tumblr.com');
-		ga('send', 'pageview');
-
-	</script>
-
-	<!-- BEGIN TUMBLR CODE -->
-        
-    
-        <iframe id="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" style="position:absolute; z-index:2147483647; top:0; right:0; border:0; background-color:transparent; overflow:hidden; " src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=874207f9e5cb497edd80f280ac3921ce#src=http%3A%2F%2Fmzmjp.tumblr.com%2F&amp;lang=en_US&amp;name=mzmjp&amp;avatar=http%3A%2F%2F31.media.tumblr.com%2Favatar_db242feea1c5_64.png&amp;title=mzmjp.tumblr.com&amp;url=http%3A%2F%2Fmzmjp.tumblr.com%2F&amp;page_slide=slide"></iframe>    <div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html#src=http%3A%2F%2Fmzmjp.tumblr.com%2F&amp;lang=en_US&amp;name=mzmjp&amp;avatar=http%3A%2F%2F31.media.tumblr.com%2Favatar_db242feea1c5_64.png&amp;title=mzmjp.tumblr.com&amp;url=http%3A%2F%2Fmzmjp.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div>
-
-<script type="text/javascript">
-    (function(){
-        var follow_iframe_initialized = false;
-        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
-            // Don't do anything until the first initialize event
-            Tumblr.PostMessageListener.initialize(function(message, origin) {
-                if (follow_iframe_initialized || message.length < 2) return;
-
-                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
-                    Tumblr.FollowTeaser.current_page = 1;
-                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
-                    Tumblr.FollowTeaser.create_from_tumblr_controls('http://assets.tumblr.com/assets/html/iframe/follow.html?_v=d445d3f27d637d835f9370e2b3dafc8b');
-                    Tumblr.FollowTeaser.scroll_listener(true);
-                    follow_iframe_initialized = true;
-                }
-            });
-        }
-    })();
-</script>
-    
-    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
-    
-        
-<iframe src="http://assets.tumblr.com/analytics.html?b2d0bf74e4eb4f2754656bc8af6444f2" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
-
-    <script>
-        var COMSCORE = true;
-        window.setTimeout(function() {
-            var analytics_frame = document.getElementById('ga_target');
-            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
-        }, 1000);
-    </script>
-
-
-
-    <script type="text/javascript">
-      var _qevents = _qevents || [];
-
-      (function() {
-       var elem = document.createElement('script');
-
-       elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-       elem.async = true;
-       elem.type = "text/javascript";
-       var scpt = document.getElementsByTagName('script')[0];
-       scpt.parentNode.insertBefore(elem, scpt);
-      })();
-    </script>
-    <script type="text/javascript">
-        _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
-    </script>
-    <noscript>
-        <div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div>
-    </noscript>
-
-
-    <script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1377960558&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvbXptanAudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MH0=&U=CEMKBEGOKM&K=9b25e9ce690f1991367979ad57553176c1c8bcd0ad8a7432f135dda860a2abe2&R=http%3A%2F%2Fwww.tumblr.com%2Fblog%2Fmzmjp'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1377960558&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvbXptanAudHVtYmxyLmNvbVwvIiwicmVxdHlwZSI6MCwibm9zY3JpcHQiOjF9&U=CEMKBEGOKM&K=e9277ef6788d54f76526846c177b08c5733dbc8b39940ba37cd20a8b04204b97&R=http%3A%2F%2Fwww.tumblr.com%2Fblog%2Fmzmjp"></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1377960558&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL216bWpwLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInBvc3RzIjpbeyJwb3N0aWQiOiI1OTc3Njk5MDgyNCIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTk3NjQ4OTU5NTIiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU5NDg5OTQxMjg2IiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1OTM1NTgxMjAyOCIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTg5MjQ1MjI5NTIiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU4OTEyODgyMDMxIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1ODY5MzYxMDk0MiIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTg2MTc2OTc3MzgiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU4Mjg3OTY4ODgzIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1ODI0MzI0MjYyNiIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTc5Mzc5Mjg0NzAiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU3MTUwNjk5MzQxIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1NjA2NDIzNTcyMyIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTUyMDkzNDczMTciLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU0OTIwNDk4NjUyIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM31dfQ==&U=FHMLODIFPA&K=2e4debc116afac20550c193410ef291fab8c61e72cccc2885542f77c26b55c37&R=http%3A%2F%2Fwww.tumblr.com%2Fblog%2Fmzmjp'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1377960558&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL216bWpwLnR1bWJsci5jb21cLyIsInJlcXR5cGUiOjAsInBvc3RzIjpbeyJwb3N0aWQiOiI1OTc3Njk5MDgyNCIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTk3NjQ4OTU5NTIiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU5NDg5OTQxMjg2IiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1OTM1NTgxMjAyOCIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTg5MjQ1MjI5NTIiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU4OTEyODgyMDMxIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1ODY5MzYxMDk0MiIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTg2MTc2OTc3MzgiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU4Mjg3OTY4ODgzIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1ODI0MzI0MjYyNiIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTc5Mzc5Mjg0NzAiLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU3MTUwNjk5MzQxIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM30seyJwb3N0aWQiOiI1NjA2NDIzNTcyMyIsImJsb2dpZCI6IjUyNTUyOCIsInNvdXJjZSI6MzN9LHsicG9zdGlkIjoiNTUyMDkzNDczMTciLCJibG9naWQiOiI1MjU1MjgiLCJzb3VyY2UiOjMzfSx7InBvc3RpZCI6IjU0OTIwNDk4NjUyIiwiYmxvZ2lkIjoiNTI1NTI4Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=FHMLODIFPA&K=fd277bdb096ae11e10529e33453499fbdcdc09bec07ff0d2f8684a8cb52456ea&R=http%3A%2F%2Fwww.tumblr.com%2Fblog%2Fmzmjp"></noscript><!-- END TUMBLR CODE -->
+					{block:PostNotes}
+						<div class="mod_notes">
+							{PostNotes}
+						<!-- ./mod_notes --></div>
+					{/block:PostNotes}
+
+				<!-- /.mod_post_footer --></div>
+
+				{/block:PermalinkPage}
+
+			<!-- /.mod_post --></article>
+
+			{/block:Posts}
+
+			{block:Pagination} 
+			<div class="mod_nav">
+				<div class="mod_older">
+					{block:NextPage}<a href="{NextPage}">Older</a>{/block:NextPage}
+				<!-- /.mod_older --></div>
+				<div class="mod_counter">
+					<p>{CurrentPage}&#x20;&#x2f;&#x20;{TotalPages}</p>
+				<!-- /.mod_counter --></div>
+				<div class="mod_newer">
+					{block:PreviousPage}<a href="{PreviousPage}">Newer</a>{/block:PreviousPage}
+				<!-- /.mod_newer --></div>
+			<!-- /.mod_nav --></div>
+			{/block:Pagination}
+
+			{block:PermalinkPagination}
+			<div class="mod_nav">
+				<div class="mod_older">
+					{block:NextPost}<a href="{NextPost}">Older</a>{/block:NextPost}
+				<!-- /.mod_older --></div>
+				<div class="mod_newer">
+					{block:PreviousPost}<a href="{PreviousPost}">Newer</a>{/block:PreviousPost}
+				<!-- /.mod_newer --></div>
+			</div>
+			{/block:PermalinkPagination}
+
+		<!-- /.mod_main --></div>
+
+	<footer class="mod_footer">
+		<p><small>&#169; {CopyrightYears} {Title}</small></p>
+	<!-- /.mod_footer --></footer>
+
+	<!-- /.mod_container --></div>
 </body>
-
 </html>
