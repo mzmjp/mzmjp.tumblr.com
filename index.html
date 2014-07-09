@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/150767/lib/mzmjp/new.css">
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/150767/lib/mzmjp/style.css">
 	<link rel="shortcut icon" href="{Favicon}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
 	<title>{Title}</title>
@@ -29,36 +29,36 @@
 
 					<div class="mod_post_content_wrapper">
 
-				{block:Text}
+					{block:Text}
 						{Body}
-				{/block:Text}
+					{/block:Text}
 
-				{block:Photo}
-					{LinkOpenTag}<img src="{PhotoURL-1280}" alt="{PhotoAlt}">{LinkCloseTag}
-					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
-				{/block:Photo}
+					{block:Photo}
+						{LinkOpenTag}<img src="{PhotoURL-1280}" alt="{PhotoAlt}">{LinkCloseTag}
+						{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+					{/block:Photo}
 
-				{block:Photoset}
-						{Photoset-500}
-					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
-				{/block:Photoset}
+					{block:Photoset}
+							{Photoset-500}
+						{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+					{/block:Photoset}
 
-				{block:Quote}
-					<h1>{Quote}</h1>
-					{block:Source}<div class="mod_source">{Source}</div>{/block:Source}
-				{/block:Quote}
+					{block:Quote}
+						<h1>{Quote}</h1>
+						{block:Source}<div class="mod_source">{Source}</div>{/block:Source}
+					{/block:Quote}
 
-				{block:Link}
-					<a href="{URL}" class="mod_link" target="{Target}"><h1>{Name}</h1></a>
-					{block:Description}<div class="mod_description">{Description}</div>{/block:Description}
-				{/block:Link}
+					{block:Link}
+						<a href="{URL}" class="mod_link" target="{Target}"><h1>{Name}</h1></a>
+						{block:Description}<div class="mod_description">{Description}</div>{/block:Description}
+					{/block:Link}
 
-				{block:Video}
-					<div class="mod_video_wrapper">
-						{Video-500}
-					</div>
-					{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
-				{/block:Video}
+					{block:Video}
+						<div class="mod_video_wrapper">
+							{Video-500}
+						</div>
+						{block:Caption}<div class="mod_caption">{Caption}</div>{/block:Caption}
+					{/block:Video}
 
 					<!-- ./mod_post_content_wrapper --></div>
 
@@ -74,9 +74,9 @@
 					</ul>
 
 					{block:PostNotes}
-						<div class="mod_notes">
-							{PostNotes}
-						<!-- ./mod_notes --></div>
+					<div class="mod_notes">
+						{PostNotes}
+					<!-- ./mod_notes --></div>
 					{/block:PostNotes}
 
 				<!-- /.mod_post_footer --></div>
@@ -119,5 +119,16 @@
 	<!-- /.mod_footer --></footer>
 
 	<!-- /.mod_container --></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43242915-1', 'tumblr.com');
+  ga('send', 'pageview');
+</script>
+
 </body>
 </html>
