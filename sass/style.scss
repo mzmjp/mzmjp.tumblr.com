@@ -230,6 +230,20 @@ body > .mod_container {
 	}
 }
 
+.mod_read_more_container {
+	a {
+		padding: .4em .8em;
+		border: solid 2px #39a1c5;
+		border-radius: 3px;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			background: #39a1c5;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+}
+
 .mod_reblog_and_like_buttons {
 	display: inline-block;
 	padding: 0;
