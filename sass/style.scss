@@ -3,6 +3,10 @@
 @import "normalize";
 @import "compass";
 
+$text-color: #000000;
+$link-color: #277590;
+$background-color: #efefef;
+
 html,body {
 	height: 100%;
 }
@@ -16,18 +20,18 @@ body > .mod_container {
 	padding: 36px 10px 12px;
 	height: 100%;
 	min-height: 100%;
-	color: #222;
+	color: $text-color;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background: #efefef;
-	border-top: 2px solid #222;
+	background: $background-color;
+	border-top: 2px solid $text-color;
 	@include box-sizing(border-box);
 	a {
 		transition: all .14s ease-in-out;
 		&:link,&:visited {
-			color: #222;
+			color: $text-color;
 		}
 		&:hover {
-			color: #39a1c5;
+			color: $link-color;
 		}
 	}
 }
@@ -85,7 +89,7 @@ body > .mod_container {
 	word-wrap: break-word;
 	a {
 		&:link,&:visited {
-			color: #39a1c5;
+			color: $link-color;
 			text-decoration: none;
 		}
 		&:hover {
@@ -168,7 +172,7 @@ body > .mod_container {
 	a {
 		display: inline-block;
 		&:link,&:visited,&:hover {
-			color: #efefef;
+			color: $background-color;
 			text-decoration: none;
 		}
 		h1 {
@@ -177,13 +181,13 @@ body > .mod_container {
 			line-height: 1.1;
 			font-size: 170%;
 			word-break: break-all;
-			background: #39a1c5;
-			border: solid 2px #39a1c5;
+			background: $link-color;
+			border: solid 2px $link-color;
 			border-radius: 6px;
 			transition: all .14s ease-in-out;
 			&:hover {
 				color: #39a1c5;
-				background: #efefef;
+				background: $background-color;
 			}
 		}
 	}
@@ -235,12 +239,12 @@ body > .mod_container {
 			display: block;
 			margin: 0 1em;
 			padding: .4em .8em;
-			border: solid 2px #39a1c5;
+			border: solid 2px $link-color;
 			border-radius: 3px;
 			text-align: center;
 			&:hover, &:active, &:focus {
 				color: #fff;
-				background: #39a1c5;
+				background: $link-color;
 				text-decoration: none;
 				font-weight: bold;
 			}
@@ -277,7 +281,7 @@ body > .mod_container {
 			border-top: 1px dashed rgba(0,0,0,0.1);
 			a {
 				&:link,&:visited {
-					color: #39a1c5;
+					color: $link-color;
 					text-decoration: none;
 				}
 				&:hover {
