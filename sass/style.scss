@@ -7,6 +7,8 @@ $text-color: #000000;
 $link-color: #277590;
 $background-color: #efefef;
 
+$transition14s: all .14s ease-in-out;
+
 html,body {
 	height: 100%;
 }
@@ -25,33 +27,49 @@ body > .mod_container {
 	background: $background-color;
 	border-top: 2px solid $text-color;
 	@include box-sizing(border-box);
-	a {
-		transition: all .14s ease-in-out;
-		&:link,&:visited {
-			color: $text-color;
-		}
-		&:hover {
-			color: $link-color;
-		}
-	}
 }
 
 .mod_header {
 	margin: 0 auto;
 	padding: 0 0 30px;
 	max-width: 940px;
-	.mod_title {
-		margin: 0;
-		font-size: 160%;
-		font-weight: bold;
-		a:link,a:visited,a:hover {
+}
+
+.mod_title {
+	margin: 0;
+	font-size: 160%;
+	font-weight: bold;
+	a {
+		transition: $transition14s;
+		&:link,
+		&:visited {
+			color: $text-color;
 			text-decoration: none;
 		}
+		&:hover,
+		&:focus {
+			color: $background-color;
+			background: $text-color;
+		}
 	}
-	.mod_description {
-		margin: 1em 0 0;
-		font-size: 100%;
-		line-height: 1.3;
+}
+
+.mod_description {
+	margin: 1em 0 0;
+	font-size: 100%;
+	line-height: 1.3;
+	a {
+		transition: $transition14s;
+		&:link,
+		&:visited {
+			color: $text-color;
+			text-decoration: none;
+		}
+		&:hover,
+		&:focus {
+			color: $background-color;
+			background: $text-color;
+		}
 	}
 }
 
@@ -70,16 +88,36 @@ body > .mod_container {
 	.mod_post_date {
 		margin: 0;
 		font-size: 130%;
-		a:link,a:visited {
-			text-decoration: none;
+		a {
+			transition: $transition14s;
+			&:link,
+			&:visited {
+				color: $link-color;
+				text-decoration: none;
+			}
+			&:hover,
+			&:focus {
+				color: $background-color;
+				background: $link-color;
+			}
 		}
 	}
 	.mod_post_title {
 		margin: 0;
 		font-size: 130%;
 		line-height: 1.2;
-		a:link,a:visited {
-			text-decoration: none;
+		a {
+			transition: $transition14s;
+			&:link,
+			&:visited {
+				color: $text-color;
+				text-decoration: none;
+			}
+			&:hover,
+			&:focus {
+				color: $background-color;
+				background: $text-color;
+			}
 		}
 	}
 }
@@ -88,18 +126,27 @@ body > .mod_container {
 	padding: 0 .4em;
 	word-wrap: break-word;
 	a {
-		&:link,&:visited {
+		transition: $transition14s;
+		&:link,
+		&:visited {
 			color: $link-color;
-			text-decoration: none;
-		}
-		&:hover {
 			text-decoration: underline;
+		}
+		&:hover,
+		&:focus {
+			color: $background-color;
+			background: $link-color;
 		}
 	}
 }
 
 .text > .mod_post_content {
-	h1,h2,h3,h4,h5,h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		margin: 20px 0;
 		line-height: 1.2;
 	}
@@ -171,7 +218,11 @@ body > .mod_container {
 .link > .mod_post_content {
 	a {
 		display: inline-block;
-		&:link,&:visited,&:hover {
+		transition: $transition14s;
+		&:link,
+		&:visited,
+		&:hover
+		&:focus {
 			color: $background-color;
 			text-decoration: none;
 		}
@@ -184,9 +235,9 @@ body > .mod_container {
 			background: $link-color;
 			border: solid 2px $link-color;
 			border-radius: 6px;
-			transition: all .14s ease-in-out;
+			transition: $transition14s;
 			&:hover {
-				color: #39a1c5;
+				color: $link-color;
 				background: $background-color;
 			}
 		}
@@ -234,22 +285,34 @@ body > .mod_container {
 	}
 }
 
-	.mod_read_more_container {
-		a {
-			display: block;
-			margin: 0 1em;
-			padding: .4em .8em;
-			border: solid 2px $link-color;
-			border-radius: 3px;
-			text-align: center;
-			&:hover, &:active, &:focus {
-				color: #fff;
-				background: $link-color;
-				text-decoration: none;
-				font-weight: bold;
-			}
+.mod_read_more_container {
+	a {
+		display: block;
+		position: relative;
+		margin: 0 1em;
+		padding: .4em .8em;
+		border: solid 2px $link-color;
+		border-radius: 3px;
+		box-shadow: 0 2px 0 rgba($link-color,.4);
+		text-align: center;
+		font-weight: bold;
+		&:link,
+		&:visited {
+			color: $background-color;
+			background: $link-color;
+			text-decoration: none;
+		}
+		&:hover,
+		&:focus {
+			color: $link-color;
+			background: $background-color;
+		}
+		&:active {
+			box-shadow: none;
+			top: 2px;
 		}
 	}
+}
 
 .mod_reblog_and_like_buttons {
 	display: inline-block;
@@ -280,11 +343,13 @@ body > .mod_container {
 			border-top: 1px dashed #d6d6d6; //fallback
 			border-top: 1px dashed rgba(0,0,0,0.1);
 			a {
-				&:link,&:visited {
+				&:link,
+				&:visited {
 					color: $link-color;
 					text-decoration: none;
 				}
-				&:hover {
+				&:hover,
+				&:focus {
 					text-decoration: underline;
 				}
 			}
@@ -311,8 +376,19 @@ body > .mod_container {
 		display: table-cell;
 		width: 30%;
 		text-align: left;
-		a:before {
-			content: "\3c\3c\00a0";
+		a {
+			&:link,
+			&:visited {
+				color: $link-color;
+			}
+			&:hover,
+			&:focus {
+				color: $background-color;
+				background: $link-color;
+			}
+			&:before {
+				content: "\3c\3c\00a0";
+			}
 		}
 	}
 	.mod_counter {
@@ -327,8 +403,19 @@ body > .mod_container {
 		display: table-cell;
 		width: 30%;
 		text-align: right;
-		a:after {
-			content: "\00a0\3e\3e";
+		a {
+			&:link,
+			&:visited {
+				color: $link-color;
+			}
+			&:hover,
+			&:focus {
+				color: $background-color;
+				background: $link-color;
+			}
+			&:after {
+				content: "\00a0\3e\3e";
+			}
 		}
 	}
 }
@@ -374,7 +461,12 @@ body > .mod_container {
 
 .text > .mod_post_content {
 	padding: 1em 2em 0;
-	h1,h2,h3,h4,h5,h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		margin: 40px 0 20px;
 	}
 	.mod_post_content_wrapper > h2:first-child {
